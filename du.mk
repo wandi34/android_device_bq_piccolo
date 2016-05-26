@@ -1,15 +1,13 @@
-# Inherit some common DU stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
-# Enhanced NFC
-$(call inherit-product, vendor/du/config/nfc_enhanced.mk)
+# Inherit some common DU stuff
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/bq/piccolo/full_piccolo.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/bq/piccolo/overlay
-
-## Device identifier. This must come after all inclusions
 PRODUCT_RELEASE_NAME := Aquaris M5
 PRODUCT_NAME := du_piccolo
 

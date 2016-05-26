@@ -1,1 +1,1 @@
-add_lunch_combo cm_piccolo-userdebug
+add_lunch_combo du_piccolo-userdebug
